@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Prime Fitness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="verificarLogin(); configurarMenuMaster();">
+
+<header class="topo">
+    <img src="logo.png" class="logo">
+    <h1>PRIME FITNESS CLUB</h1>
+</header>
+
+<main class="container">
+
+    <h2>ESCOLHA UMA OPÇÃO</h2>
+
+    <div class="menu">
+
+        <div class="card-opcao">
+            <img src="adicionar.png" alt="Adicionar">
+            <button type="button" onclick="location.href='cadastro.html'">
+                ADICIONAR
+            </button>
+        </div>
+
+        <div class="card-opcao">
+            <img src="lista.png" alt="Lista">
+            <button type="button" onclick="location.href='lista.html'">
+                LISTA
+            </button>
+        </div>
+
+        <div class="card-opcao">
+            <img src="sair.png" alt="Sair">
+            <button type="button" onclick="logout()">
+                SAIR
+            </button>
+        </div>
+
+        <div class="card-opcao" id="opcao-master" style="display:none;">
+            <img src="master.png" alt="Master">
+            <button type="button" onclick="location.href='master.html'">
+                MASTER
+            </button>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>
